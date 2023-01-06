@@ -1,0 +1,23 @@
+
+#server:
+#  port: 9000
+#
+
+spring:
+  datasource:
+    url: jdbc:mysql://${MYSQL_HOST:localhost}:3306/db_example
+    username: springuser
+    password: ThePassword
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+
+  security:
+    oauth2:
+      client:
+        registration:
+          google:
+            client-id: 40219346207-tiig0qhhvtpvu4q0ulkdhse49gq9rcn4.apps.googleusercontent.com
+            client-secret: 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
